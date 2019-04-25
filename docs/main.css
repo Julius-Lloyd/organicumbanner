@@ -1,0 +1,153 @@
+
+.banner{
+	
+    width: 728px; 
+    height: 100px;
+    position: absolute;
+    background: #E5E3AF;
+}
+
+img.organic {
+	width: 200px;
+	height: 80px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.logo {
+    animation-name: black-box-move;
+   
+    /*
+
+    animation-delay  
+    
+    animation-delay  er den forsinkelse animationen har efter siden er loaded, eller efter 
+    animationen gentages. 
+    Dens forsinkelse kan skrives i sekunder om vist:
+    animation-delay: 2s;  
+
+    eller millisekunder: 
+    animation-delay: 2000ms; 
+
+    */
+    width: 30px; 
+    height: 30px; 
+    top: 20px; 
+    left: 0px;
+    animation-fill-mode: both; 
+    transition-timing-function: linear;
+    }
+img.food1 {
+	width: 150px;
+	height: 100px;
+	overflow: hidden;
+}
+
+.dining {
+    animation-name: dining-move;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+     /*
+
+    animation-iteration-count  
+    
+    animation-iteration-count er antallet af gange en animation skal gentages. 
+    Det kan være et antal fx fire gentagelser: 
+
+    animation-iteration-count: 4;
+
+    eller uendelig mange
+
+    animation-iteration-count: infinite;
+    */
+    animation-fill-mode: both; 
+    transition-timing-function: linear;
+    top: 0px;
+    left: 20px;
+    position: absolute;
+    }
+
+img.food2 {
+	width: 150px;
+	height: 100px;
+	
+}
+.marinate {
+    animation-name: marinate-move;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+     /*
+
+    animation-iteration-count  
+    
+    animation-iteration-count er antallet af gange en animation skal gentages. 
+    Det kan være et antal fx fire gentagelser: 
+
+    animation-iteration-count: 4;
+
+    eller uendelig mange
+
+    animation-iteration-count: infinite;
+    */
+    animation-fill-mode: both; 
+    transition-timing-function: linear;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    }
+    img.food3 {
+	width: 150px;
+	height: 100px;
+	
+}
+ .suppe {
+    animation-name: suppe-move;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+     /*
+
+    animation-iteration-count  
+    
+    animation-iteration-count er antallet af gange en animation skal gentages. 
+    Det kan være et antal fx fire gentagelser: 
+
+    animation-iteration-count: 4;
+
+    eller uendelig mange
+
+    animation-iteration-count: infinite;
+    */
+    animation-fill-mode: both; 
+    transition-timing-function: linear;
+   top: 0px;
+    left: 0px;
+    position: absolute;
+    }
+    
+        
+
+        @keyframes dining-move {
+            0% {transform: translate(220px, -100px);}
+            100% {
+                transform: translate(220px, 0px);
+               
+            }
+    
+        }
+
+@keyframes marinate-move {
+            0% {transform: translate(400px, -100px);}
+            100% {
+                transform: translate(400px, 0px);
+               
+            }
+    
+        }
+@keyframes suppe-move {
+            0% {transform: translate(560px, -100px);}
+	
+            100% {
+                transform: translate(560px, 0px);
+               
+            }
+    
+        }
